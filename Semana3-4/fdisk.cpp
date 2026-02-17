@@ -176,7 +176,7 @@ void particionar(int &size, char &tipo, std::string &disk_path, std::string &nom
         std::cout << "[ERROR]NO SE PUDO ABRIR EL DISCO, revisar path" << std::endl;
         return;
     }
-//mbr para poder leer la header del disco
+//mbr para poder leer  header del disco
     MBR mbr;
     // DEFAULT -1, es que no hay extendida
     int posicion = -1;
@@ -190,6 +190,7 @@ void particionar(int &size, char &tipo, std::string &disk_path, std::string &nom
         //espacios=vector de las sturcts libre, cada uno tiene un campo size
         //espacio_requerido=cuanto espacio necesita
 
+        //DEVUELVE EL INDICE DEL ESPACIO EN DONDE CABE Y -1 SI NO CABE
 
         // SI EL ESPACIO DA MENOS UNO MARCA QUE NO HAY ESPACIO DISPONIBLE
         if (espacios.empty()) {
@@ -214,6 +215,7 @@ void particionar(int &size, char &tipo, std::string &disk_path, std::string &nom
         if (fit == 'w') {
             //ordena de menor a mayor y elige el mayoir back()
             std::sort(espacios.begin(), espacios.end());
+            //si cabe en el del final devuelve ese indice, por eso se le resta 1
             if (espacio_requerido <= espacios.back().size) {
                 return static_cast<int>(espacios.size()) - 1;
             }
@@ -297,6 +299,8 @@ void particionar(int &size, char &tipo, std::string &disk_path, std::string &nom
                 esp.inicioEBR = inicioExt;
                 //ultimo byte ocupado por la logica actual
                 esp.finLogica = ebr.part_start + ebr.part_s - 1;
+
+                //el espacio libre empieza desde finLogica +1 hasta el siguiente ebr o el final de la extendida
 
                 if (ebr.part_next == -1) {
                     //si no hay mas ebr, el espacio libre desde el fin de la logica hasta el fin de la extendida

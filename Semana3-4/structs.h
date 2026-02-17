@@ -64,6 +64,7 @@ struct libre{
     int inicio;
     int size;
 
+    //para saber si un libre es menor que otro- compara dos structs de tipo libre y devuelve true si el size es menor
     bool operator<(const libre& a) const
     {
         return size < a.size;
