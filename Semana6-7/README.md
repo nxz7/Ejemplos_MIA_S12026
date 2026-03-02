@@ -1,4 +1,4 @@
-# Clase 5 - Diagrama MBR y disk
+# Clase 6-7 ==== Diagrama MBR y disk
 
 En base a los comandos generados en las clases anteriores, en esta clase se explico el codigo para generar dos de los reportes solicitados.
 - MBR detalles sobre las particiones
