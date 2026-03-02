@@ -1,0 +1,42 @@
+digraph mbr {
+    node [shape=plaintext];
+
+    struct1 [label=<
+        <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD ROWSPAN="3" BGCOLOR="#084887" HEIGHT="100">MBR</TD>
+                <TD ROWSPAN="3" BGCOLOR="#909cc2" WIDTH="100">
+                    PRIMARIA<BR/>
+                    Part1<BR/>
+                    20%
+                </TD>
+                <TD COLSPAN="50" BGCOLOR="#f58a07" WIDTH="100">
+                    EXTENDIDA<BR/>
+                </TD>
+                <TD ROWSPAN="3" WIDTH="100" BGCOLOR="#ffeedd">
+                    LIBRE<BR/>
+                    60%
+                </TD>
+            </TR>
+
+            <TR>
+                <TD BGCOLOR="#1b5ea1ff" HEIGHT="100">EBR</TD>
+                <TD BGCOLOR="#f9ab55" WIDTH="100">
+                    LOGICA<BR/>
+                    Partlogica<BR/>
+                    1%
+                </TD>
+                <TD BGCOLOR="#1b5ea1ff" HEIGHT="100">EBR</TD>
+                <TD BGCOLOR="#f9ab55" WIDTH="100">
+                    LOGICA<BR/>
+                    Partlogica2<BR/>
+                    2%
+                </TD>
+                <TD ROWSPAN="3" WIDTH="100" BGCOLOR="#ffeedd">
+                    LIBRE<BR/>
+                    16%
+                </TD>
+            </TR>
+        </TABLE>
+    >];
+}

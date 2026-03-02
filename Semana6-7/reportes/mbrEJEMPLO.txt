@@ -1,0 +1,60 @@
+digraph mbr {
+    node [shape=plaintext];
+
+    struct1 [label=<
+        <TABLE BORDER="2" CELLBORDER="0" CELLSPACING="0">
+            <TR>
+                <TD BGCOLOR="#caffbf" WIDTH="300">MBR</TD>
+                <TD BGCOLOR="#caffbf" WIDTH="300"></TD>
+            </TR>
+            <TR><TD>SIZE</TD><TD>5242880</TD></TR>
+            <TR><TD>Fit</TD><TD>b</TD></TR>
+            <TR><TD>Disk Signature</TD><TD>2052</TD></TR>
+            <TR><TD>Fecha Creacion</TD><TD>Mon Mar 2 00:02:52 2026</TD></TR>
+
+            <TR>
+                <TD BGCOLOR="#f0f3bd" WIDTH="300">PARTICION</TD>
+                <TD BGCOLOR="#f0f3bd" WIDTH="300"></TD>
+            </TR>
+            <TR><TD>Status</TD><TD>0</TD></TR>
+            <TR><TD>Tipo</TD><TD>p</TD></TR>
+            <TR><TD>Fit</TD><TD>b</TD></TR>
+            <TR><TD>Inicio</TD><TD>137</TD></TR>
+            <TR><TD>SIZE</TD><TD>1048576</TD></TR>
+            <TR><TD>Nombre</TD><TD>Part1</TD></TR>
+
+            <TR>
+                <TD BGCOLOR="#d1ac00" WIDTH="300">PARTICION</TD>
+                <TD BGCOLOR="#d1ac00" WIDTH="300"></TD>
+            </TR>
+            <TR><TD>Status</TD><TD>0</TD></TR>
+            <TR><TD>Tipo</TD><TD>e</TD></TR>
+            <TR><TD>Fit</TD><TD>f</TD></TR>
+            <TR><TD>Inicio</TD><TD>1048713</TD></TR>
+            <TR><TD>SIZE</TD><TD>1048576</TD></TR>
+            <TR><TD>Nombre</TD><TD>PartEXT2</TD></TR>
+
+            <TR>
+                <TD BGCOLOR="#bdb2ff" WIDTH="300">EBR</TD>
+                <TD BGCOLOR="#bdb2ff" WIDTH="300"></TD>
+            </TR>
+            <TR><TD>Status</TD><TD>1</TD></TR>
+            <TR><TD>Fit</TD><TD>w</TD></TR>
+            <TR><TD>Inicio</TD><TD>1048746</TD></TR>
+            <TR><TD>SIZE</TD><TD>102400</TD></TR>
+            <TR><TD>Next</TD><TD>1151146</TD></TR>
+            <TR><TD>Nombre</TD><TD>Partlogica</TD></TR>
+
+            <TR>
+                <TD BGCOLOR="#bdb2ff" WIDTH="300">EBR</TD>
+                <TD BGCOLOR="#bdb2ff" WIDTH="300"></TD>
+            </TR>
+            <TR><TD>Status</TD><TD>1</TD></TR>
+            <TR><TD>Fit</TD><TD>f</TD></TR>
+            <TR><TD>Inicio</TD><TD>1151178</TD></TR>
+            <TR><TD>SIZE</TD><TD>122880</TD></TR>
+            <TR><TD>Next</TD><TD>-1</TD></TR>
+            <TR><TD>Nombre</TD><TD>Partlogica2</TD></TR>
+        </TABLE>
+    >];
+}
