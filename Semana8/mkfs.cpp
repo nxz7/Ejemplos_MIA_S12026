@@ -87,7 +87,7 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
         }
     }
     if (posParticion == -1) {
-        std::cout << "[ERROR]LA PARTICION NO EXISTE, REVISAR ID" << std::endl;
+        std::cout << "[ERROR]LA PARTICION NO ESISTE, REVISAR ID" << std::endl;
         return;
     }
 
@@ -125,13 +125,8 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
     sbloque nuevo;
     // NUMERO MAXIMO DE INODOS
     //n numero de inodos
-
-    //hardcodeo del tamaño del bloque como 64 bytes
-    //3*sizeof(bloque)+4
-    // si no: int n = static_cast<int>(std::floor( (p_size - sizeof(sbloque)) / (4.0 + sizeof(inodo) + 3.0 * sizeof(barchivos)) ));
     int n = static_cast<int>(std::floor((p_size - sizeof(sbloque)) / (196 + sizeof(inodo))));
 
-    //
     nuevo.s_filesystem_type   = 2;
     nuevo.s_inodes_count      = n;
     // cada inodo tiene 3 bloques
@@ -149,18 +144,11 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
     nuevo.s_inode_s           = sizeof(inodo);
     nuevo.s_block_s           = sizeof(barchivos);
 
-//Superbloque
-//Bitmap de inodos
-//Bitmap de bloques
-//Tabla de inodos
-//area de bloques
-
     // doonde inician
-//inicio de los bitmap
+
     nuevo.s_bm_inode_start = particion_inicio + sizeof(sbloque);
     nuevo.s_bm_block_start = nuevo.s_bm_inode_start + (n * sizeof(char));
 
-    //inicio tablas
     nuevo.s_inode_start = nuevo.s_bm_block_start + ((n * sizeof(char)) * 3);
     nuevo.s_block_start = nuevo.s_inode_start + (n * sizeof(inodo));
 
@@ -205,9 +193,8 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
     >>content dentro de carpteas y guarda el nombre y el inodo al que apunta
 
     */
-//-----------------------------
-//inodo 0 -> carpeta raíz
-//bloque 0 -> bloque de carpeta
+
+
     //-----------------------------------------
     // USAR EL PRIMER INODO Y BLOQUE PARA LA RAIZ -- 1=USADO
     // inodo 0
@@ -241,10 +228,6 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
 
     // -- CREAR EL BLOQUE DE LA RAIZ
     bcarpetas nueva_ncarpeta;
-// como es la raiz 
-// . RAIZ
-// .. RAIZ
-// ya guarda el archivo users.txt para el login, con su inodo 1
 
     // inicializar entradas como vacías
     for (int i = 0; i < 4; ++i) {
@@ -261,7 +244,7 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
     nueva_ncarpeta.b_content[1].b_inodo = 0;
 
     //----
-    // INODO UNO CON EL USER.TXT---LA CARPETA GUARDA EL NOMBRE
+    // INODO UNO CON EL USER.TXT
     std::strcpy(nueva_ncarpeta.b_content[2].b_name, "users.txt");
     nueva_ncarpeta.b_content[2].b_inodo = 1;
 
