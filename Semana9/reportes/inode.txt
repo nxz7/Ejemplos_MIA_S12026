@@ -1,0 +1,61 @@
+digraph Inodes {
+  rankdir=LR;
+  node [shape=plaintext, fontname="Helvetica", fontsize=10, fontcolor="#226f54"];
+  inode0 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#f4f0bb" COLOR="#87c38f">
+      <TR><TD COLSPAN="2"><B>Inodo 0</B></TD></TR>
+      <TR><TD ALIGN="left">id owner:</TD><TD>1</TD></TR>
+      <TR><TD ALIGN="left">id grupo:</TD><TD>1</TD></TR>
+      <TR><TD ALIGN="left">tamaño archivo:</TD><TD>0</TD></TR>
+      <TR><TD ALIGN="left">última lectura:</TD><TD>2025-11-20 17:50:07</TD></TR>
+      <TR><TD ALIGN="left">fecha de creación:</TD><TD>2025-11-20 17:50:07</TD></TR>
+      <TR><TD ALIGN="left">última modificación:</TD><TD>2025-11-20 17:50:07</TD></TR>
+      <TR><TD ALIGN="left">Bloque 0:</TD><TD>0</TD></TR>
+      <TR><TD ALIGN="left">Bloque 1:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 2:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 3:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 4:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 5:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 6:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 7:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 8:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 9:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 10:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 11:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 12:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 13:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 14:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">tipo de inodo:</TD><TD>0</TD></TR>
+      <TR><TD ALIGN="left">permisos:</TD><TD>777</TD></TR>
+    </TABLE>
+  >];
+  inode1 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#f4f0bb" COLOR="#87c38f">
+      <TR><TD COLSPAN="2"><B>Inodo 1</B></TD></TR>
+      <TR><TD ALIGN="left">id owner:</TD><TD>1</TD></TR>
+      <TR><TD ALIGN="left">id grupo:</TD><TD>1</TD></TR>
+      <TR><TD ALIGN="left">tamaño archivo:</TD><TD>27</TD></TR>
+      <TR><TD ALIGN="left">última lectura:</TD><TD>2025-11-20 17:50:07</TD></TR>
+      <TR><TD ALIGN="left">fecha de creación:</TD><TD>2025-11-20 17:50:07</TD></TR>
+      <TR><TD ALIGN="left">última modificación:</TD><TD>2025-11-20 17:50:07</TD></TR>
+      <TR><TD ALIGN="left">Bloque 0:</TD><TD>1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 1:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 2:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 3:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 4:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 5:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 6:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 7:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 8:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 9:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 10:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 11:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 12:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 13:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">Bloque 14:</TD><TD>-1</TD></TR>
+      <TR><TD ALIGN="left">tipo de inodo:</TD><TD>1</TD></TR>
+      <TR><TD ALIGN="left">permisos:</TD><TD>777</TD></TR>
+    </TABLE>
+  >];
+  inode0 -> inode1;
+}
