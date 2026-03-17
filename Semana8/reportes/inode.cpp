@@ -15,7 +15,7 @@ void reporte_inode(std::vector<disco> &discos, int posDisco, int posParticion, s
         return;
     }
 
-    // DETERMINAR EL INIDIO DE LA PARTICION
+    // DETERMINAR EL INICIO DE LA PARTICION
     int particion_inicio = 0;
 
     if (part_uso.posMBR != -1) {

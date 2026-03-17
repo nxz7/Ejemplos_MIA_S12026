@@ -7,9 +7,9 @@ digraph Inodes {
       <TR><TD ALIGN="left">id owner:</TD><TD>1</TD></TR>
       <TR><TD ALIGN="left">id grupo:</TD><TD>1</TD></TR>
       <TR><TD ALIGN="left">tamaño archivo:</TD><TD>0</TD></TR>
-      <TR><TD ALIGN="left">última lectura:</TD><TD>2026-03-09 18:17:30</TD></TR>
-      <TR><TD ALIGN="left">fecha de creación:</TD><TD>2026-03-09 18:17:30</TD></TR>
-      <TR><TD ALIGN="left">última modificación:</TD><TD>2026-03-09 18:17:30</TD></TR>
+      <TR><TD ALIGN="left">última lectura:</TD><TD>2026-03-17 00:35:14</TD></TR>
+      <TR><TD ALIGN="left">fecha de creación:</TD><TD>2026-03-17 00:35:14</TD></TR>
+      <TR><TD ALIGN="left">última modificación:</TD><TD>2026-03-17 00:35:14</TD></TR>
       <TR><TD ALIGN="left">Bloque 0:</TD><TD>0</TD></TR>
       <TR><TD ALIGN="left">Bloque 1:</TD><TD>-1</TD></TR>
       <TR><TD ALIGN="left">Bloque 2:</TD><TD>-1</TD></TR>
@@ -35,9 +35,9 @@ digraph Inodes {
       <TR><TD ALIGN="left">id owner:</TD><TD>1</TD></TR>
       <TR><TD ALIGN="left">id grupo:</TD><TD>1</TD></TR>
       <TR><TD ALIGN="left">tamaño archivo:</TD><TD>27</TD></TR>
-      <TR><TD ALIGN="left">última lectura:</TD><TD>2026-03-09 18:17:30</TD></TR>
-      <TR><TD ALIGN="left">fecha de creación:</TD><TD>2026-03-09 18:17:30</TD></TR>
-      <TR><TD ALIGN="left">última modificación:</TD><TD>2026-03-09 18:17:30</TD></TR>
+      <TR><TD ALIGN="left">última lectura:</TD><TD>2026-03-17 00:35:14</TD></TR>
+      <TR><TD ALIGN="left">fecha de creación:</TD><TD>2026-03-17 00:35:14</TD></TR>
+      <TR><TD ALIGN="left">última modificación:</TD><TD>2026-03-17 00:35:14</TD></TR>
       <TR><TD ALIGN="left">Bloque 0:</TD><TD>1</TD></TR>
       <TR><TD ALIGN="left">Bloque 1:</TD><TD>-1</TD></TR>
       <TR><TD ALIGN="left">Bloque 2:</TD><TD>-1</TD></TR>
