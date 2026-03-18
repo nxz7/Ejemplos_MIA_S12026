@@ -104,6 +104,8 @@ void rep(std::vector<std::string> &parametros, std::vector<disco> &discos) {
         reporte_disk(discos, position_disk, path);
     } else if (reporte_name == "inode") {
         reporte_inode(discos, position_disk, partition_position, path);
+    } else if (reporte_name == "block") {
+        reporte_block(discos, position_disk, partition_position, path);
     } else if (reporte_name == "bm_inode") {
         std::cout << "bm_inode" << std::endl;
         reporte_bm_inode(discos, position_disk, partition_position, path);

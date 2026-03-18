@@ -17,5 +17,6 @@ void reporte_mbr(std::vector<disco> &discos, int posDisco, std::string &ruta);
 void reporte_disk(std::vector<disco> &discos, int posDisco, std::string &ruta);
 void reporte_inode(std::vector<disco> &discos, int posDisco, int posParticion, std::string &ruta);
 void reporte_bm_inode(std::vector<disco> &discos, int posDisco, int posParticion, std::string &ruta);
+void reporte_block(std::vector<disco> &discos, int posDisco, int posParticion, std::string &ruta);
 
 #endif

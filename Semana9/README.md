@@ -7,7 +7,7 @@ En esta clase se muestra como generar el bitmap de inodos, en donde se muestran 
 ```bash
 cd Semana9
 g++ -std=c++17 main.cpp analizador.cpp mkdisk.cpp rmdisk.cpp fdisk.cpp mount.cpp mkfs.cpp \
-    rep.cpp reportes/mbr.cpp reportes/disk.cpp reportes/inode.cpp reportes/bm_inode.cpp -o clase9
+    rep.cpp reportes/mbr.cpp reportes/disk.cpp reportes/inode.cpp reportes/bm_inode.cpp reportes/block.cpp -o clase9
 ./clase9
 ```
 
@@ -22,6 +22,7 @@ fdisk >size=120 >unit=k >path="/home/natalia/Documents/discos/Disco1.dsk" >name=
 mkfs >id=0070Disco1 >type=full
 mount >path="/home/natalia/Documents/discos/Disco1.dsk" >name=Partlogica2
 mkfs >id=0071Disco1 >type=full
+rep >id=0070Disco1 >path="/home/natalia/Documents/SEM9/Practicas/Ejemplos_MIA_S12026/Semana9/reportes/block.png" >name=block
 rep >id=0070Disco1 >path="/home/natalia/Documents/SEM9/Practicas/Ejemplos_MIA_S12026/Semana9/reportes/mbr.png" >name=mbr
 rep >id=0070Disco1 >path="/home/natalia/Documents/SEM9/Practicas/Ejemplos_MIA_S12026/Semana9/reportes/disk.png" >name=disk
 rep >id=0070Disco1 >path="/home/natalia/Documents/SEM9/Practicas/Ejemplos_MIA_S12026/Semana9/reportes/inode.png" >name=inode

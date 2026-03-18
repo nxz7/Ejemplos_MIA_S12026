@@ -1,0 +1,179 @@
+digraph BlockReport {
+  rankdir=LR;
+  node [shape=plaintext, fontname="Helvetica", fontsize=10];
+  edge [color="#264653", penwidth=1.4];
+  block0 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#D8F3DC" COLOR="#2D6A4F">
+      <TR><TD COLSPAN="2" BGCOLOR="#95D5B2"><B>Bloque Carpeta 0</B></TD></TR>
+      <TR><TD><B>Nombre</B></TD><TD><B>Inodo</B></TD></TR>
+      <TR><TD>.</TD><TD>0</TD></TR>
+      <TR><TD>..</TD><TD>0</TD></TR>
+      <TR><TD>users.txt</TD><TD>1</TD></TR>
+      <TR><TD>-</TD><TD>-1</TD></TR>
+    </TABLE>
+  >];
+  block1 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#E0FBFC" COLOR="#3D5A80">
+      <TR><TD BGCOLOR="#98C1D9"><B>Bloque Archivo 1</B></TD></TR>
+      <TR><TD ALIGN="LEFT">1,G,root<BR ALIGN="LEFT"/>1,U,root,root,123<BR ALIGN="LEFT"/></TD></TR>
+    </TABLE>
+  >];
+  block304 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#FAEDCD" COLOR="#BC6C25">
+      <TR><TD BGCOLOR="#FFD166"><B>Bloque Apuntador 304</B></TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block455 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#D8F3DC" COLOR="#2D6A4F">
+      <TR><TD COLSPAN="2" BGCOLOR="#95D5B2"><B>Bloque Carpeta 455</B></TD></TR>
+      <TR><TD><B>Nombre</B></TD><TD><B>Inodo</B></TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block483 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#D8F3DC" COLOR="#2D6A4F">
+      <TR><TD COLSPAN="2" BGCOLOR="#95D5B2"><B>Bloque Carpeta 483</B></TD></TR>
+      <TR><TD><B>Nombre</B></TD><TD><B>Inodo</B></TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block568 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#FAEDCD" COLOR="#BC6C25">
+      <TR><TD BGCOLOR="#FFD166"><B>Bloque Apuntador 568</B></TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block610 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#FAEDCD" COLOR="#BC6C25">
+      <TR><TD BGCOLOR="#FFD166"><B>Bloque Apuntador 610</B></TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block673 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#E0FBFC" COLOR="#3D5A80">
+      <TR><TD BGCOLOR="#98C1D9"><B>Bloque Archivo 673</B></TD></TR>
+      <TR><TD ALIGN="LEFT">(vacio)</TD></TR>
+    </TABLE>
+  >];
+  block680 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#D8F3DC" COLOR="#2D6A4F">
+      <TR><TD COLSPAN="2" BGCOLOR="#95D5B2"><B>Bloque Carpeta 680</B></TD></TR>
+      <TR><TD><B>Nombre</B></TD><TD><B>Inodo</B></TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+      <TR><TD>-</TD><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block681 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#E0FBFC" COLOR="#3D5A80">
+      <TR><TD BGCOLOR="#98C1D9"><B>Bloque Archivo 681</B></TD></TR>
+      <TR><TD ALIGN="LEFT">(vacio)</TD></TR>
+    </TABLE>
+  >];
+  block704 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#FAEDCD" COLOR="#BC6C25">
+      <TR><TD BGCOLOR="#FFD166"><B>Bloque Apuntador 704</B></TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block976 [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#FAEDCD" COLOR="#BC6C25">
+      <TR><TD BGCOLOR="#FFD166"><B>Bloque Apuntador 976</B></TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+      <TR><TD>0</TD></TR>
+    </TABLE>
+  >];
+  block0 -> block1;
+  block1 -> block304;
+  block304 -> block455;
+  block455 -> block483;
+  block483 -> block568;
+  block568 -> block610;
+  block610 -> block673;
+  block673 -> block680;
+  block680 -> block681;
+  block681 -> block704;
+  block704 -> block976;
+}
