@@ -1,0 +1,120 @@
+:root {
+  --bg: linear-gradient(160deg, #f6f7ef 0%, #e7efe2 55%, #d8e4dc 100%);
+  --card: #ffffff;
+  --text: #17261f;
+  --muted: #4f6358;
+  --accent: #14532d;
+  --accent-2: #1f7a43;
+  --border: #c8d8ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+}
+
+.card {
+  width: min(900px, 100%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 16px 30px rgba(14, 37, 24, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+textarea {
+  width: 100%;
+  min-height: 230px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+#script-file {
+  display: none;
+}
+
+.file-btn,
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.58rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:disabled {
+  background: #91a79a;
+  cursor: not-allowed;
+}
+
+.file-btn:hover,
+button:hover:not(:disabled) {
+  background: var(--accent-2);
+}
+
+.file-name {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+pre {
+  margin: 0.5rem 0 0;
+  min-height: 170px;
+  max-height: 360px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f4faf4;
+  padding: 0.8rem;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 0.8rem;
+  }
+
+  textarea {
+    min-height: 190px;
+  }
+}
