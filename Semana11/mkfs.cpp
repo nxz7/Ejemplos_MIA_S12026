@@ -143,6 +143,9 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
         return;
     }
 
+
+    // FORMATEAR LA DATA DE JORNALKING
+
     nuevo.s_filesystem_type   = use_ext3 ? 3 : 2;
     nuevo.s_inodes_count      = n;
     nuevo.s_blocks_count      = n * 3;
@@ -162,6 +165,7 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
         nuevo.s_journal_max = n;
         nuevo.s_bm_inode_start = nuevo.s_journal_start + (n * static_cast<int>(sizeof(registro_journal)));
     } else {
+        // SI NO SE USA ESTO VA EN -1 PARA INDICAR QUE NO HAY JOURNALING
         nuevo.s_journal_start = -1;
         nuevo.s_journal_count = 0;
         nuevo.s_journal_max = 0;
@@ -178,6 +182,8 @@ void mkfs(std::vector<std::string> &parametros, std::vector<disco> &discos) {
     fseek(disk_file, particion_inicio, SEEK_SET);
     fwrite(&nuevo, sizeof(sbloque), 1, disk_file);
 
+
+    //aca es donde se ingresa la informacion
     if (use_ext3) {
         registro_journal vacio_journal{};
         fseek(disk_file, nuevo.s_journal_start, SEEK_SET);
