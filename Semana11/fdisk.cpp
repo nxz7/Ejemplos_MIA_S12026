@@ -1,6 +1,7 @@
 #include "fdisk.h"
 #include <algorithm>
 #include <cctype>
+#include <cstring>
 #include <cstdio>
 #include <iostream>
 #include <regex>
